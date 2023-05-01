@@ -29,7 +29,7 @@ Date,Time,Comp,Round,Day,Venue,Result,GF,GA,Opponent,xG,xGA,Poss,Attendance,Capt
 2023-04-05,20:00,Premier League,Matchweek 25,Wed,Home,W,1,0,Brentford,1.2,0.7,64.0,73309.0,Bruno Fernandes,4-2-3-1,John Brooks,Match Report,,19.9,18.0,3.0,1.0,0.0,0.0,2023
 2023-04-08,12:30,Premier League,Matchweek 30,Sat,Home,W,2,0,Everton,3.4,1.0,63.0,73509.0,Harry Maguire,4-2-3-1,Michael Oliver,Match Report,,16.5,29.0,11.0,0.0,0.0,0.0,2023
 2023-04-16,16:30,Premier League,Matchweek 31,Sun,Away,W,2,0,Nott'ham Forest,3.5,0.7,68.0,29435.0,Harry Maguire,4-2-3-1,Simon Hooper,Match Report,,15.4,22.0,7.0,1.0,0.0,0.0,2023
-2023-04-27,20:15,Premier League,Matchweek 33,Thu,Away,,,,Tottenham,,,,,,,,Head-to-Head,,,,,,,,2023
+2023-04-27,20:15,Premier League,Matchweek 33,Thu,Away,D,2,2,Tottenham,2.0,2.5,60.0,61586.0,Bruno Fernandes,4-2-3-1,Anthony Taylor,Match Report,,17.9,17.0,7.0,2.0,0.0,0.0,2023
 2023-04-30,14:00,Premier League,Matchweek 34,Sun,Home,,,,Aston Villa,,,,,,,,Head-to-Head,,,,,,,,2023
 2023-05-04,20:00,Premier League,Matchweek 28,Thu,Away,,,,Brighton,,,,,,,,Head-to-Head,,,,,,,,2023
 2023-05-07,19:00,Premier League,Matchweek 35,Sun,Away,,,,West Ham,,,,,,,,Head-to-Head,,,,,,,,2023
@@ -67,7 +67,7 @@ Date,Time,Comp,Round,Day,Venue,Result,GF,GA,Opponent,xG,xGA,Poss,Attendance,Capt
 2023-04-05,20:00,Premier League,Matchweek 25,Wed,Home,W,1,0,Brentford,1.2,0.7,64.0,73309.0,Bruno Fernandes,4-2-3-1,John Brooks,Match Report,,19.9,18.0,3.0,1.0,0.0,0.0,2022
 2023-04-08,12:30,Premier League,Matchweek 30,Sat,Home,W,2,0,Everton,3.4,1.0,63.0,73509.0,Harry Maguire,4-2-3-1,Michael Oliver,Match Report,,16.5,29.0,11.0,0.0,0.0,0.0,2022
 2023-04-16,16:30,Premier League,Matchweek 31,Sun,Away,W,2,0,Nott'ham Forest,3.5,0.7,68.0,29435.0,Harry Maguire,4-2-3-1,Simon Hooper,Match Report,,15.4,22.0,7.0,1.0,0.0,0.0,2022
-2023-04-27,20:15,Premier League,Matchweek 33,Thu,Away,,,,Tottenham,,,,,,,,Head-to-Head,,,,,,,,2022
+2023-04-27,20:15,Premier League,Matchweek 33,Thu,Away,D,2,2,Tottenham,2.0,2.5,60.0,61586.0,Bruno Fernandes,4-2-3-1,Anthony Taylor,Match Report,,17.9,17.0,7.0,2.0,0.0,0.0,2022
 2023-04-30,14:00,Premier League,Matchweek 34,Sun,Home,,,,Aston Villa,,,,,,,,Head-to-Head,,,,,,,,2022
 2023-05-04,20:00,Premier League,Matchweek 28,Thu,Away,,,,Brighton,,,,,,,,Head-to-Head,,,,,,,,2022
 2023-05-07,19:00,Premier League,Matchweek 35,Sun,Away,,,,West Ham,,,,,,,,Head-to-Head,,,,,,,,2022
@@ -105,7 +105,7 @@ Date,Time,Comp,Round,Day,Venue,Result,GF,GA,Opponent,xG,xGA,Poss,Attendance,Capt
 2023-04-05,20:00,Premier League,Matchweek 25,Wed,Home,W,1,0,Brentford,1.2,0.7,64.0,73309.0,Bruno Fernandes,4-2-3-1,John Brooks,Match Report,,19.9,18.0,3.0,1.0,0.0,0.0,2021
 2023-04-08,12:30,Premier League,Matchweek 30,Sat,Home,W,2,0,Everton,3.4,1.0,63.0,73509.0,Harry Maguire,4-2-3-1,Michael Oliver,Match Report,,16.5,29.0,11.0,0.0,0.0,0.0,2021
 2023-04-16,16:30,Premier League,Matchweek 31,Sun,Away,W,2,0,Nott'ham Forest,3.5,0.7,68.0,29435.0,Harry Maguire,4-2-3-1,Simon Hooper,Match Report,,15.4,22.0,7.0,1.0,0.0,0.0,2021
-2023-04-27,20:15,Premier League,Matchweek 33,Thu,Away,,,,Tottenham,,,,,,,,Head-to-Head,,,,,,,,2021
+2023-04-27,20:15,Premier League,Matchweek 33,Thu,Away,D,2,2,Tottenham,2.0,2.5,60.0,61586.0,Bruno Fernandes,4-2-3-1,Anthony Taylor,Match Report,,17.9,17.0,7.0,2.0,0.0,0.0,2021
 2023-04-30,14:00,Premier League,Matchweek 34,Sun,Home,,,,Aston Villa,,,,,,,,Head-to-Head,,,,,,,,2021
 2023-05-04,20:00,Premier League,Matchweek 28,Thu,Away,,,,Brighton,,,,,,,,Head-to-Head,,,,,,,,2021
 2023-05-07,19:00,Premier League,Matchweek 35,Sun,Away,,,,West Ham,,,,,,,,Head-to-Head,,,,,,,,2021
@@ -143,7 +143,7 @@ Date,Time,Comp,Round,Day,Venue,Result,GF,GA,Opponent,xG,xGA,Poss,Attendance,Capt
 2023-04-05,20:00,Premier League,Matchweek 25,Wed,Home,W,1,0,Brentford,1.2,0.7,64.0,73309.0,Bruno Fernandes,4-2-3-1,John Brooks,Match Report,,19.9,18.0,3.0,1.0,0.0,0.0,2020
 2023-04-08,12:30,Premier League,Matchweek 30,Sat,Home,W,2,0,Everton,3.4,1.0,63.0,73509.0,Harry Maguire,4-2-3-1,Michael Oliver,Match Report,,16.5,29.0,11.0,0.0,0.0,0.0,2020
 2023-04-16,16:30,Premier League,Matchweek 31,Sun,Away,W,2,0,Nott'ham Forest,3.5,0.7,68.0,29435.0,Harry Maguire,4-2-3-1,Simon Hooper,Match Report,,15.4,22.0,7.0,1.0,0.0,0.0,2020
-2023-04-27,20:15,Premier League,Matchweek 33,Thu,Away,,,,Tottenham,,,,,,,,Head-to-Head,,,,,,,,2020
+2023-04-27,20:15,Premier League,Matchweek 33,Thu,Away,D,2,2,Tottenham,2.0,2.5,60.0,61586.0,Bruno Fernandes,4-2-3-1,Anthony Taylor,Match Report,,17.9,17.0,7.0,2.0,0.0,0.0,2020
 2023-04-30,14:00,Premier League,Matchweek 34,Sun,Home,,,,Aston Villa,,,,,,,,Head-to-Head,,,,,,,,2020
 2023-05-04,20:00,Premier League,Matchweek 28,Thu,Away,,,,Brighton,,,,,,,,Head-to-Head,,,,,,,,2020
 2023-05-07,19:00,Premier League,Matchweek 35,Sun,Away,,,,West Ham,,,,,,,,Head-to-Head,,,,,,,,2020
