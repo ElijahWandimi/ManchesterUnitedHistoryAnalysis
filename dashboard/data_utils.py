@@ -1,10 +1,11 @@
 import numpy as np
 import pandas as pd
+import os
 import requests
 from bs4 import BeautifulSoup
 import time
 
-# Create a function to scrape the data
+# Create a function to scrape the data and chache it
 def scrape_data():
     all_matches = []
     years = list(range(2023, 2019, -1))
@@ -39,4 +40,11 @@ def scrape_data():
 
     return pd.concat(all_matches)
 
+def read_static_data():
+    data_path = os.getcwd() + '/data/matches.csv'
+    return pd.read_csv(data_path)
+
+if __name__ == "__main__":
+    read_static_data()
+    scrape_data()
 
