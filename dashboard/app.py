@@ -14,9 +14,6 @@ try:
 except ValueError:
     df = read_static_data()
 
-df['Result'].fillna('D', inplace=True)
-
-
 # Create app
 app = dash.Dash(__name__)
 app.title = 'Manchester United Premier League Stats'
@@ -193,6 +190,97 @@ away_fig.update_layout(
     }}
 )
 
+# total goals scored and conceded and their percentage difference
+goals_df = df.groupby('Venue')[['GF', 'GA']].sum()
+goals_df['GD'] = goals_df['GF'] - goals_df['GA']
+goals_df['GD%'] = goals_df['GD'] / goals_df['GF'] * 100
+goals_df = goals_df.round(2)
+
+home_goals_fig = go.Figure()
+home_goals_fig.add_trace(go.Indicator(
+    mode='number',
+    value=goals_df['GF'][0],
+    title='Goals scored',
+    domain={'row': 0, 'column': 0}
+))
+home_goals_fig.add_trace(go.Indicator(
+    mode='number',
+    value=goals_df['GA'][0],
+    title='Goals conceded',
+    domain={'row': 0, 'column': 1}
+))
+home_goals_fig.add_trace(go.Indicator(
+    mode='number',
+    value=goals_df['GD%'][0],
+    title='Goal difference %',
+    domain={'row': 0, 'column': 2}
+))
+home_goals_fig.update_layout(
+    grid={'rows': 1, 'columns': 3, 'pattern': "independent"},
+    title = 'Home games',
+    template={'data': {'indicator': [{
+        'mode': "number",
+        'domain': {'row': 0, 'column': 0}}]
+    }}
+)
+
+# away
+away_goals_fig = go.Figure()
+away_goals_fig.add_trace(go.Indicator(
+    mode='number',
+    value=goals_df['GF'][1],
+    title='Goals scored',
+    domain={'row': 0, 'column': 0}
+))
+away_goals_fig.add_trace(go.Indicator(
+    mode='number',
+    value=goals_df['GA'][1],
+    title='Goals conceded',
+    domain={'row': 0, 'column': 1}
+))
+away_goals_fig.add_trace(go.Indicator(
+    mode='number',
+    value=goals_df['GD%'][1],
+    title='Goal difference %',
+    domain={'row': 0, 'column': 2}
+))
+away_goals_fig.update_layout(
+    grid={'rows': 1, 'columns': 3, 'pattern': "independent"},
+    title = 'Away games',
+    template={'data': {'indicator': [{
+        'mode': "number",
+        'domain': {'row': 0, 'column': 0}}]
+    }}
+)
+
+# overall  percentage difference in goals scored and conceded
+overall_goals_fig = go.Figure()
+overall_goals_fig.add_trace(go.Indicator(
+    mode='number',
+    value=goals_df['GF'].sum(),
+    title='Goals scored',
+    domain={'row': 0, 'column': 0}
+))
+overall_goals_fig.add_trace(go.Indicator(
+    mode='number',
+    value=goals_df['GA'].sum(),
+    title='Goals conceded',
+    domain={'row': 0, 'column': 1}
+))
+overall_goals_fig.add_trace(go.Indicator(
+    mode='number',
+    value=goals_df['GD%'].sum(),
+    title='Goal difference %',
+    domain={'row': 0, 'column': 2}
+))
+overall_goals_fig.update_layout(
+    grid={'rows': 1, 'columns': 3, 'pattern': "independent"},
+    title = 'Overall',
+    template={'data': {'indicator': [{
+        'mode': "number",
+        'domain': {'row': 0, 'column': 0}}]
+    }}
+)
 
 
 
@@ -231,6 +319,24 @@ app.layout = html.Div([
             dcc.Graph(id='away', figure=away_fig)
         ], style={'width': '49%', 'display': 'inline-block', 'height': '50%'}),
     ], style={'width': '100%', 'display': 'flex', 'align-items': 'center', 'justify-content': 'center'}),
+
+    html.Br(),
+
+    html.Div([
+        html.Div([
+            dcc.Graph(id='home-goals', figure=home_goals_fig)
+        ], style={'width': '49%', 'display': 'inline-block'}),
+
+        html.Div([
+            dcc.Graph(id='away-goals', figure=away_goals_fig)
+        ], style={'width': '49%', 'display': 'inline-block', 'height': '50%'}),
+    ], style={'width': '100%', 'display': 'flex', 'align-items': 'center', 'justify-content': 'center'}),
+
+    html.Br(),
+
+    html.Div([
+        dcc.Graph(id='overall-goals', figure=overall_goals_fig)
+    ], style={'width': '49%', 'display': 'inline-block', 'height': '50%'}),
 
 ])
 

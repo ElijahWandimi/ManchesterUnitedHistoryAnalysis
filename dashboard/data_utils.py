@@ -5,6 +5,13 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
+# function to drop null values
+def drop_goals_nulls(df):
+    for col in ['GA', 'GF']:
+        df[col].fillna(0, inplace=True)
+        df[col] = df[col].astype(int)
+    return df
+
 # Create a function to scrape the data and chache it
 def scrape_data():
     all_matches = []
@@ -38,11 +45,14 @@ def scrape_data():
         all_matches.append(team_df) 
         time.sleep(1)
 
-    return pd.concat(all_matches)
+    df = pd.concat(all_matches)
+    return drop_goals_nulls(df)
+
 
 def read_static_data():
     data_path = os.getcwd() + '/data/matches.csv'
-    return pd.read_csv(data_path)
+    df = pd.read_csv(data_path)
+    return drop_goals_nulls(df)
 
 if __name__ == "__main__":
     read_static_data()
