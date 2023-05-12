@@ -198,7 +198,9 @@ away_fig.update_layout(
 
 # Create app layout
 app.layout = html.Div([
-    html.H1("MANCHESTER UNITED PREMIER LEAGUE STATS"),
+    html.Div([
+        html.H1("MANCHESTER UNITED PREMIER LEAGUE STATS"),
+    ], style={'textAlign': 'center', 'padding': 10, 'backgroundColor': '#3aaab2', 'color': 'white'}),
 
     html.Div([
         dcc.Graph(id='results', figure=fig)
