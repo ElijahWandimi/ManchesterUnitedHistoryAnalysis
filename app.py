@@ -6,7 +6,7 @@ import dash
 from dash import html, dcc
 from dash.dependencies import Input, Output
 import time
-from .data_utils import scrape_data, read_static_data
+from dashboard.data_utils import scrape_data, read_static_data
 
 # Import data
 try:
@@ -17,6 +17,8 @@ except ValueError:
 # Create app
 app = dash.Dash(__name__)
 app.title = 'Manchester United Premier League Stats'
+
+server = app.server
 
 # Create figure with go for results
 fig = go.Figure()
